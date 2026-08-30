@@ -175,6 +175,15 @@ const stats = [
           }
         }
       });
+    } else {
+      // 没有文章时显示"今天"
+      const lastUpdateElements = document.querySelectorAll('[data-stat-id="last-update"]');
+      lastUpdateElements.forEach((element) => {
+        element.textContent = todayText;
+        if (element.nextElementSibling) {
+          element.nextElementSibling.style.display = 'none';
+        }
+      });
     }
   }
 

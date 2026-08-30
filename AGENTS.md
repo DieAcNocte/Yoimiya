@@ -32,3 +32,10 @@ Use Conventional Commits, matching the current history: `feat: ...`, `fix: ...`,
 ## Security & Configuration Tips
 
 Do not commit secrets, tokens, or service keys in config files. Keep deployment-specific settings in the target platform environment, and review generated files such as `dist`, `src/constants/lqips.json`, and `src/constants/icons.ts` before committing them.
+# 项目约定
+
+## 笔记目录
+
+- 项目的笔记统一存放在根目录下的 `FireFlyNote/` 文件夹,作为笔记目录。
+- 该目录是用户的个人笔记区,与博客文章内容目录(`src/content/posts`)相互独立,不要把笔记当作博客文章构建或提交,除非用户明确要求。
+- 在笔记目录中创建或修改文件时,保持 Markdown 格式。
