@@ -90,6 +90,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 			// 关于页面
 			LinkPresets.About,
+
+			// 关于本站页面
+			LinkPresets.Site,
 		],
 	});
 
@@ -111,6 +114,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				url: "https://docs-firefly.cuteleaf.cn",
 				external: true,
 				icon: "material-symbols:docs",
+			},
+			{
+				name: "Steam",
+				url: "https://steamcommunity.com/id/DieAcNocter/",
+				external: true,
+				icon: "fa7-brands:steam",
 			},
 		],
 	});
@@ -225,6 +234,11 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		name: "关于我",
 		url: "/about/",
 		icon: "material-symbols:person",
+	},
+	Site: {
+		name: "关于本站",
+		url: "/site/",
+		icon: "material-symbols:language",
 	},
 };
 

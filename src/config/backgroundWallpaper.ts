@@ -36,31 +36,45 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	 * ],
 	 */
 	src: {
-		// 桌面背景图片（支持单张或多张随机）
-		// desktop: "assets/images/DesktopWallpaper/d1.avif",
+		// 桌面背景图片（配置为数组，每次刷新随机显示一张）
 		desktop: [
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
+			"assets/images/DesktopWallpaper/D01.avif",
+			"assets/images/DesktopWallpaper/D02.avif",
+			"assets/images/DesktopWallpaper/D03.avif",
+			"assets/images/DesktopWallpaper/D04.avif",
+			"assets/images/DesktopWallpaper/D05.avif",
+			"assets/images/DesktopWallpaper/D06.avif",
+			"assets/images/DesktopWallpaper/D07.avif",
+			"assets/images/DesktopWallpaper/D08.avif",
+			"assets/images/DesktopWallpaper/D09.avif",
+			"assets/images/DesktopWallpaper/D10.avif",
+			"assets/images/DesktopWallpaper/D11.avif",
+			"assets/images/DesktopWallpaper/D12.avif",
+			"assets/images/DesktopWallpaper/D13.avif",
+			"assets/images/DesktopWallpaper/D14.avif",
 		],
-		// 移动背景图片（支持单张或多张随机）
-		// mobile: "assets/images/MobileWallpaper/m1.avif",
+		// 移动背景图片（配置为数组，每次刷新随机显示一张）
 		mobile: [
-			"assets/images/MobileWallpaper/m1.avif",
-			"assets/images/MobileWallpaper/m2.avif",
-			"assets/images/MobileWallpaper/m3.avif",
-			"assets/images/MobileWallpaper/m4.avif",
-			"assets/images/MobileWallpaper/m5.avif",
-			"assets/images/MobileWallpaper/m6.avif",
+			"assets/images/MobileWallpaper/M01.avif",
+			"assets/images/MobileWallpaper/M02.avif",
+			"assets/images/MobileWallpaper/M03.avif",
+			"assets/images/MobileWallpaper/M04.avif",
+			"assets/images/MobileWallpaper/M05.avif",
+			"assets/images/MobileWallpaper/M06.avif",
+			"assets/images/MobileWallpaper/M07.avif",
+			"assets/images/MobileWallpaper/M08.avif",
+			"assets/images/MobileWallpaper/M09.avif",
+			"assets/images/MobileWallpaper/M10.avif",
+			"assets/images/MobileWallpaper/M11.avif",
+			"assets/images/MobileWallpaper/M12.avif",
+			"assets/images/MobileWallpaper/M13.avif",
 		],
 		// 背景视频播放地址
 		// 支持单个视频路径（字符串）或多个视频循环（数组，参考上面壁纸配置）
 		// 支持远程视频URL，本地视频请放在 public/assets/videos/ 目录下
-		// playerUrl: "/assets/videos/firefly.mp4",
-		playerUrl: "https://bed.twoleaf.cn/file/1785658612716_firefly.mp4",
+		// 视频壁纸暂时移除（原流萤视频已删除），playerEnable 保持开启，导航栏播放按钮仍显示；
+		// 需要恢复视频壁纸时，取消下行注释并填写视频地址即可
+		// playerUrl: "/assets/videos/yoimiya.mp4",
 	},
 	// 横幅壁纸和全屏壁纸共享配置
 	common: {
@@ -77,13 +91,12 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 主页横幅主标题字体大小
 			titleSize: "4.5rem",
 			// 主页横幅副标题
+			// 多行副标题 + 打字机开启时，循环"打字→停留→删除→下一句"
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"The glaze flames dance in splendid light",
+				"When fireworks bloom, summer never ends",
+				"The Queen of the Summer Festival",
+				"Every spark in the night is a wish",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",

@@ -4,6 +4,7 @@ import type { Translation } from "../translation";
 export const ru: Translation = {
 	[Key.home]: "Главная",
 	[Key.about]: "О нас",
+	[Key.site]: "О сайте",
 	[Key.archive]: "Архив",
 	[Key.search]: "Поиск",
 	[Key.searchNoResults]: "Результаты не найдены.",

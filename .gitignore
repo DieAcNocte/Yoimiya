@@ -48,3 +48,10 @@ package/
 .codex*
 .claude
 .mimocode
+
+# local scratch / working materials
+scoure/
+AVIF/
+bigscreen/
+yoimiya/
+gui-test-screenshots/
